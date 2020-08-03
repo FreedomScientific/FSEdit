@@ -1,0 +1,3 @@
+[submodule "lib/wtl"]
+	path = lib/wtl
+	url = https://git.code.sf.net/p/wtl/git

@@ -1,8 +1,6 @@
 #include "stdafx.h"
 #include "BrlEditWnd.h"
-//#include "jpipedef.h"
-#include <af_irda.h>
-
+#include "SkeletonBrailleTranslator.h"
 
 
 #define NUMRETYR  5                   // Maximum number of retries
@@ -199,11 +197,27 @@ void CBrlEdit::NetworkPrinters(bool bReInit /* = false */)
 		EnumeratePrinter(&nr);
 	}
 }
+template <class T>
+static
+HRESULT CreateWithRef(T** ppObject)
+{
+	CComObject<T>* pObject;
+	HRESULT hr = CComObject<T>::CreateInstance(&pObject);
+	if (SUCCEEDED(hr))
+	{
+		pObject->AddRef();
+		*ppObject = pObject;
+	}
+
+	return hr;
+}
 static CComPtr<IBrailleTranslator> LoadBrailleTranslator()
 {
-	ATLASSERT(false);
-	// Write code to load a Braille translator that supports the IbrailleTranslator interface. and return it.
-	return CComPtr < IBrailleTranslator>();
+	// This just returns a skeleton translator that does nothing.
+	CComPtr<CSkeletonBrailleTranslator> skeletonTranslator;
+	CreateWithRef(&skeletonTranslator);
+	ATLASSERT(skeletonTranslator);
+	CComQIPtr<IBrailleTranslator> translatorInterface = skeletonTranslator; return translatorInterface;
 }
 
 LRESULT CBrlEdit::OnCreate(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/)

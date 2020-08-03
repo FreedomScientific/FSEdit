@@ -113,4 +113,7 @@
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="US_Unicode.jbt" />
+  </ItemGroup>
 </Project>
