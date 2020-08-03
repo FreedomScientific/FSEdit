@@ -1,0 +1,139 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+WCE_FINDDLG DIALOG DISCARDABLE  0, 0, 156, 117
+STYLE DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Find"
+BEGIN
+    LTEXT           "Fi&nd What:",-1,5,9,71,8,NOT WS_GROUP
+    EDITTEXT        ID_EDIT1,78,7,73,14,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "Match &Whole Word Only",ID_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,5,38,146,12
+    CONTROL         "Match &Case",ID_CHECK2,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,5,25,146,12
+    CONTROL         "&Up",ID_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP |
+                    WS_TABSTOP,88,65,61,10
+    CONTROL         "&Down",ID_RADIO2,"Button",BS_AUTORADIOBUTTON |
+                    WS_TABSTOP,88,79,61,10
+    GROUPBOX        "Direction",ID_GROUP1,83,53,68,43
+    PUSHBUTTON      "&Find Next",ID_BUTTON_FIND,5,57,71,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,5,76,71,14,WS_GROUP
+    PUSHBUTTON      "&Help",ID_BUTTON_HELP,5,96,71,14,WS_GROUP
+END
+
+WCE_REPLACEDLG DIALOG DISCARDABLE  0, 0, 156, 130
+STYLE DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Replace"
+BEGIN
+    LTEXT           "Fi&nd What:",-1,5,9,71,8,NOT WS_GROUP
+    EDITTEXT        ID_EDIT1,78,7,73,14,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Re&place With:",-1,5,26,71,8,NOT WS_GROUP
+    EDITTEXT        ID_EDIT2,78,24,73,14,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "Match &Whole Word Only",ID_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,5,53,146,12
+    CONTROL         "Match &Case",ID_CHECK2,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,5,40,146,12
+    PUSHBUTTON      "&Find Next",ID_BUTTON_FIND,5,71,64,14,WS_GROUP
+    PUSHBUTTON      "&Replace",ID_BUTTON1,78,71,73,14,WS_GROUP
+    PUSHBUTTON      "Replace &All",ID_BUTTON2,78,91,73,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,5,91,64,14,WS_GROUP
+    PUSHBUTTON      "&Help",ID_BUTTON_HELP,5,110,64,14,WS_GROUP
+END
+
+IDD_FONT_DLG DIALOG DISCARDABLE  13, 54, 250, 133
+STYLE DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Font"
+FONT 8, "MS Sans Serif"
+BEGIN
+//    LTEXT           "Property &Name:",IDC_STATIC,3,5,61,8
+//    COMBOBOX        AFX_IDC_FONTPROP,65,3,100,71,CBS_DROPDOWNLIST | CBS_SORT |
+//                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Font:",IDC_STATIC,3,19,91,8
+    COMBOBOX        AFX_IDC_FONTNAMES,3,29,91,77,CBS_DROPDOWN |
+                    CBS_OWNERDRAWFIXED | CBS_AUTOHSCROLL | CBS_SORT |
+                    CBS_HASSTRINGS | CBS_DISABLENOSCROLL | WS_VSCROLL |
+                    WS_TABSTOP
+    LTEXT           "Font St&yle:",IDC_STATIC,102,19,53,8
+    COMBOBOX        AFX_IDC_FONTSTYLES,104,29,53,53,CBS_DROPDOWNLIST |
+                    CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Size:",IDC_STATIC,167,19,40,8
+    COMBOBOX        AFX_IDC_FONTSIZES,167,29,36,53,CBS_DROPDOWN |
+                    CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Stri&keout",AFX_IDC_STRIKEOUT,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,109,55,65,10
+    CONTROL         "&Underline",AFX_IDC_UNDERLINE,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,175,55,65,10
+    GROUPBOX        "Effects",IDC_STATIC,104,44,142,24,WS_GROUP
+    CTEXT           "AaBbYyZz",AFX_IDC_SAMPLEBOX,110,80,130,22,SS_NOPREFIX //|
+                    NOT WS_VISIBLE
+	GROUPBOX        "Sample",IDC_STATIC,104,71,142,36,WS_GROUP
+    DEFPUSHBUTTON   "&OK",IDOK,25,113,81,13
+    PUSHBUTTON		"&Cancel",IDCANCEL,143,113,81,13
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

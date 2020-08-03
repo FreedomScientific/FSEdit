@@ -1,0 +1,7 @@
+// BEdit.cpp: implementation of the CBEdit class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "..\INCLUDE\BEdit.h"
+
