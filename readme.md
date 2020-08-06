@@ -1,10 +1,12 @@
 # FSEdit 
 
-FSEdit is a Windows only Braille editor built on top of the RichEdit
+FSEdit is a Windows only Braille editor built on top of a RichEdit
 control. It was originally used on the Freedom Scientific PAC Mate
-note taker and was tightly integrated with JAWS.  For the open source
-release, we made just enough changes to get it to compile under
-Windows 10. Work needs to be done to get it to actually be useful.
+note taker and was tightly integrated with JAWS.  
+
+For the open source release, we made just enough changes to get it to
+compile under Windows 10. Work needs to be done to get it to actually
+be useful.
 
 All JAWS specific code has been removed. This primarily impacts
 forward and back translation for which the interface remains but the
@@ -56,4 +58,4 @@ that ATL is selected under the specific components tab of the Visual
 Studio Installer.
 
 There's also a dependency on WTL (Windows Template Library) which is
-included as a submodule of ths project.
+included as a submodule of this project.
